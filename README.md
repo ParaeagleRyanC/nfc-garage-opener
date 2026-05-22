@@ -30,7 +30,7 @@ Instead of interfacing directly with the garage opener hardware, the ESP32 elect
 - Transistor fakes a button press
 - Remote sends toggle signal
 - Garage door opens/closes
-### See [System Flow Diagram](system_flow_diagram.pdf)
+### See [System Flow Diagram](system_flow_diagram.png)
 
 ## Hardware
 ### Components
@@ -46,9 +46,11 @@ Instead of interfacing directly with the garage opener hardware, the ESP32 elect
 - Remote retains its own coin-cell battery
 - Transistor momentarily shorts the remote button contacts
 - GPIO23 is used as the trigger output
-### See [Wiring Diagram](wiring_diagram.pdf)
+### See [Wiring Diagram](wiring_diagram.png)
 
 ## Software
+### Arduino IDE 
+- Code developed and deployed with Arduino IDE 
 ### ESP32 Firmware
 - The ESP32 hosts a lightweight HTTP server exposing:
   - POST /trigger 
@@ -61,10 +63,10 @@ Instead of interfacing directly with the garage opener hardware, the ESP32 elect
   - HTTP POST to ESP32 (via local Wi-Fi)
 - The shortcut runs automatically as long as iPhone is unlocked.
 
-## Security Consideration
+## Security Considerations
 ### This project intentionally:
 - avoids cloud services
-- avoids exposing the device to the public network
+- avoids exposing the device to the public internet
 - preserves LiftMaster rolling-code authentication
 - uses token-based request authentication
 - requires physical NFC interaction for normal use
