@@ -30,7 +30,8 @@ Instead of interfacing directly with the garage opener hardware, the ESP32 elect
 - Transistor fakes a button press
 - Remote sends toggle signal
 - Garage door opens/closes
-### See [System Flow Diagram](system_flow_diagram.png)
+### See [System Flow Diagram PDF](system_flow_diagram.pdf)
+![System Flow Diagram](system-flow.png)
 
 ## Hardware
 ### Components
@@ -46,7 +47,8 @@ Instead of interfacing directly with the garage opener hardware, the ESP32 elect
 - Remote retains its own coin-cell battery
 - Transistor momentarily shorts the remote button contacts
 - GPIO23 is used as the trigger output
-### See [Wiring Diagram](wiring_diagram.png)
+### See [Wiring Diagram PDF](wiring_diagram.pdf)
+![Wiring Diagram](wiring.png)
 
 ## Software
 ### Arduino IDE 
